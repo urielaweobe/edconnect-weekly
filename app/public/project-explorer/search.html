@@ -21,6 +21,12 @@
       <!-- Search Form -->
       <h3>Search Project By</h3>
 
+      <input
+        type="text"
+        name="searchTerm"
+        placeholder="Project Name, Authors, Abstract, Tags"
+      />
+
       <form name="searchForm">
         <label for="searchType">Search By:</label><br />
         <select name="searchType" id="">
@@ -28,14 +34,10 @@
           <option value="Abstract">Abstract</option>
           <option value="Authors">Authors</option>
           <option value="Tags">Tags</option>
-        </select> <br>
+        </select>
+        <br />
 
-        <input
-          type="submit"
-          name="searchTerm"
-          placeholder="Project Name, Authors, Abstract, Tags"
-          value="Search"
-        />
+        <input type="submit" value="Search" />
       </form>
 
       <!-- Search Results -->
