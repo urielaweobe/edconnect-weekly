@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <header class="navbar flex-column flex-md-row bg-primary navbar-dark navbar-expand-lg">
+      <a class="navbar-brand" href="#">Project Explorer</a>
+      <div>
+        <ul class="navbar-nav mr-auto flex-row">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search Projects"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="createproject.html">Submit</a>
+          </li>
+        </ul>
+      </div>
+     
+        <ul class="navbar-nav ml-md-auto">
+          <li class="nav-item">
+            <a class="nav-item nav-link mr-md-2" href="register.html">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="login.html">Login</a>
+          </li>
+        </ul>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Project details -->
+      <h3>Project 1</h3>
+
+      <div class="bg-light">
+        <div class="row pt-3 d-flex justify-content-around" >
+          <div class="col-md-3">
+            <p>
+              Created By <br />
+              John Doe
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p>
+              Date Created<br />
+              2020-08-30
+            </p>
+          </div>
+          <div class="col-md-3">
+            <p>
+              Last Updated <br />
+              2020-08-30
+            </p>
+          </div>
+          <div class="justify-content-end">
+            <a href="viewproject.html">
+              <button class="btn btn-primary" type="submit">View Project</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edit form -->
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Edit Project</h5>
+          
+          <hr>
+          
+          <!-- Form -->
+          <form name="editProject">
+            <div class="form-row">
+              <div class="form-group col-md-12 mb-3">
+                <label class="form-label" for="name">Project Name</label>
+                <input class="form-control" type="text" name="name" />
+              </div>
+              
+              <div class="form-group col-md-12 mb-3">
+                <label class="form-label" for="abstract">Project Abstract</label>
+                <textarea class="form-control" name="abstract" id="" cols="30" rows="10"></textarea>
+              </div>
+              
+              <div class="form-group col-md-12 mb-3">
+                <label class="form-label" for="authors">Authors</label>
+                <input class="form-control" type="text" name="authors" />
+              </div>
+              
+              <div class="form-group col-md-12 md-3">
+                <label class="form-label" for="tags">Tag(s):</label> <br />
+                <input class="form-control" type="text" name="tags" /><br />
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Save</button>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Manage Project Files</h5>
+          <hr>
+
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" name="projectFile" id="">
+            <label class="custom-file-label" for="customFile">Click to open file browser</label>
+          </div>
+
+          <div class="card mt-3">
+            <h4 class="card-header">
+              Project Files
+            </h4>
+            <div class="card-body mx-auto w-50">
+              <p class="card-text">No file uploaded yet</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </form>
+    </main>
+
+      <!-- footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="d-flex float-right">
+          <span class="text-muted">Project Explorer &copy; 2020 . </span>
+          <p class="ml-1">Edconnect</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
